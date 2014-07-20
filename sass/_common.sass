@@ -1,0 +1,251 @@
++font('museocyrl-300', 'museocyrl-300')
++font('museocyrl-500', 'museocyrl-500')
++font('museocyrl-900', 'museocyrl-900')
+
+=m300
+	font-family: 'museocyrl-300'
+	font-weight: normal
+	font-style: normal
+=m500
+	font-family: 'museocyrl-500'
+	font-weight: normal
+	font-style: normal
+=m900
+	font-family: 'museocyrl-900'
+	font-weight: normal
+	font-style: normal
+
+body
+	+m300
+	font-size: 14px
+	line-height: 1.4
+	background: #fff
+	min-width: 960px
+	// +font-smoothing
+
+%in
+	width: 940px
+	margin-left: auto
+	margin-right: auto
+
+.container
+	@extend %in
+
+.btn
+	display: inline-block
+	padding: 10px 41px 6px
+	+m500
+	color: #fff
+	text-decoration: none
+	white-space: nowrap
+	text-transform: uppercase
+	font-size: 15px
+	line-height: 16px
+	+text-shadow(0 1px 0 #9d0055)
+	+border-radius(16px)
+	background-color: #e5007d
+	+g(rgba(#fc6aba, 1), rgba(#cd0472, 1))
+	+box-shadow(0 3px 0 #9d0056, inset 0 3px 0 rgba(#ffc3e4, .3))
+	// +transition(all 1s linear)
+	&:hover
+		// background-color: #e5007d
+		color: #ffc000
+		+g(rgba(#fc87c3, 1), rgba(#dc0383, 1))
+		+box-shadow(0 3px 0 #9d0056, inset 0 3px 0 rgba(#ffc3e4, .3))
+	&:active
+		position: relative
+		top: 3px
+		+g(rgba(#fc87c3, 1), rgba(#dc0383, 1))
+		+box-shadow(0 1px 0 #9d0056, inset 0 3px 0 rgba(#ffc3e4, .3))
+	&.btn_lg
+		+border-radius(25px)
+		font-size: 24px
+		line-height: 25px
+		padding: 15px 52px 10px
+		+box-shadow(0 5px 0 #9d0056, inset 0 3px 0 rgba(#ffc3e4, .3))
+		&:active
+			position: relative
+			top: 4px
+			+box-shadow(0 1px 0 #9d0056, inset 0 3px 0 rgba(#ffc3e4, .3))
+	&.btn_action
+		+text-shadow(0 1px 0 #376a18)
+		+box-shadow(0 3px 0 #467f23, inset 0 3px 0 rgba(#c0eda5, .55))
+		+g(#89cd5f, #6db243)
+		&:hover
+			color: #fff
+			+g(#a0e576, #79d143)
+		&:active
+			position: relative
+			top: 3px
+			+g(#a0e576, #79d143)
+			+box-shadow(0 1px 0 #467f23, inset 0 3px 0 rgba(#c0eda5, .55))
+
+.input
+	+m300
+	display: inline-block
+	// vertical-align: middle
+	+border-radius(8px)
+	font-size: 18px
+	// line-height: 16px
+	background-color: #fff
+	+box-shadow(inset 0 1px 5px rgba(148,156,158,.75))
+	// padding: 5px 9px
+	padding: 0 9px
+	height: 35px
+	+placeholder-color(#e6e9ea)
+
+
+.h1
+	+m900
+	font-size: 44px
+	line-height: 1
+	color: #fff
+	+text-shadow(0 3px 0 rgba(0,0,0,.2))
+	margin-bottom: 13px
+.h2
+	font-size: 36px
+.h3
+	+m300
+	font-size: 22px
+	color: #fff
+	+text-shadow(0 3px 0 rgba(0,0,0,.2))
+	margin-bottom: 14px
+.h4
+	font-size: 18px
+
+.header
+	height: 50px
+	background: #20242b
+	color: #788083
+	.container
+		position: relative
+		+clr
+		// padding: 10px 0 //tmp
+	.header__logo
+		display: inline-block
+		vertical-align: top
+		margin-top: 13px
+		color: #e6007e
+		font-size: 18px
+		text-transform: uppercase
+		a
+			text-decoration: none
+			color: inherit
+			&:hover
+				text-decoration: underline
+	.header__slogan
+		display: inline-block
+		vertical-align: top
+		margin-top: 18px
+		// vertical-align: middle
+	.header__right
+		float: right
+		margin-top: 9px
+	.header__tel
+		color: #1cb4e4
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+	.header__sep
+		display: inline-block
+		margin: 0 5px
+	.header__btn-order
+		display: inline-block
+		margin-top: -1px
+	.order
+		position: absolute
+		top: 0
+		right: 0
+
+.order
+	background: #fff
+	width: 345px
+	border: 1px solid #e3e5e5
+	padding: 25px 20px 15px
+	z-index: 1
+	color: #4f555e
+	.order__label
+		line-height: 1
+		margin-bottom: 4px
+	.order__row
+		+clr
+		margin-bottom: 10px
+	.order__input
+		width: 170px
+		float: left
+	.order__btn
+		float: right
+		padding: 10px 25px 6px
+	.order__message
+		font-family: Arial, sans-serif
+		font-size: 12px
+		color: #999fa8
+
+
+.intro
+	background: #1cb4e4 url('../img/bg1.jpg')
+	+cover
+	font-size: 16px
+	color: #fff
+	.container
+		padding: 43px 0 35px
+		+clr
+	.intro__text
+		float: left
+		width: 460px
+		+text-shadow(0 3px 0 rgba(0,0,0,.2))
+		p
+			line-height: 28px
+	.intro__note
+		font-family: Arial, sans-serif
+		font-size: 12px
+		color: #73c3ea
+		+text-shadow(none)
+		line-height: 16px
+		margin-top: 48px
+	.action
+		float: right
+		margin-top: 9px
+
+.action
+	width: 380px
+	border: 3px solid #ede4db
+	background: url("../img/action_bg.png")
+	+cover
+	padding: 18px 34px 48px 30px
+	position: relative
+	font-size: 16px
+	.action__title
+		+hidetext
+		+s(action)
+		margin: 0 auto 11px
+	.action__descr
+		line-height: 20px
+	.action__form
+	.action__row
+		margin-top: 14px
+	.action__label
+		display: block
+		margin-bottom: 4px
+	.action__input
+		display: block
+		width: 100%
+		border: 1px solid #3f78b4
+		+box-shadow(inset 0 1px 5px #4a707d)
+	.action__submit
+		position: absolute
+		left: 0
+		width: 100%
+		bottom: -23px
+		text-align: center
+
+
+
+
+
+
+
+
+
+
+
