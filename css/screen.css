@@ -67,8 +67,7 @@ body { font-family: "museocyrl-300"; font-weight: normal; font-style: normal; fo
 .header .header__logo a:hover { text-decoration: underline; }
 .header .header__slogan { display: inline-block; vertical-align: top; margin-top: 18px; }
 .header .header__right { float: right; margin-top: 9px; }
-.header .header__tel { color: #1cb4e4; text-decoration: none; }
-.header .header__tel:hover { text-decoration: underline; }
+.header .header__tel { color: #1cb4e4; }
 .header .header__sep { display: inline-block; margin: 0 5px; }
 .header .header__btn-order { display: inline-block; margin-top: -1px; }
 .header .order { position: absolute; top: 0; right: 0; }
@@ -90,7 +89,7 @@ body { font-family: "museocyrl-300"; font-weight: normal; font-style: normal; fo
 .intro .action { float: right; margin-top: 9px; }
 
 .action { width: 380px; border: 3px solid #ede4db; background-image: -webkit-linear-gradient(235deg, rgba(115, 195, 234, 0.25) 0%, rgba(230, 0, 126, 0.25) 100%); background-image: -moz-linear-gradient(235deg, rgba(115, 195, 234, 0.25) 0%, rgba(230, 0, 126, 0.25) 100%); background-image: -o-linear-gradient(235deg, rgba(115, 195, 234, 0.25) 0%, rgba(230, 0, 126, 0.25) 100%); background-image: linear-gradient(235deg, rgba(115, 195, 234, 0.25) 0%, rgba(230, 0, 126, 0.25) 100%); padding: 18px 34px 48px 30px; position: relative; font-size: 16px; }
-.action .action__title { font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-s26144dfd54.png') 0 0 no-repeat; width: 259px; height: 43px; margin: 0 auto 11px; }
+.action .action__title { font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-s61bf2dda8d.png') 0 0 no-repeat; width: 259px; height: 43px; margin: 0 auto 11px; }
 .action .action__descr { line-height: 20px; }
 .action .action__row { margin-top: 14px; }
 .action .action__label { display: block; margin-bottom: 4px; }
@@ -117,9 +116,9 @@ body { font-family: "museocyrl-300"; font-weight: normal; font-style: normal; fo
 .wecan { margin-left: 526px; padding-top: 100px; }
 .wecan .wecan__item { margin-top: 30px; padding-left: 35px; line-height: 25px; position: relative; }
 .wecan .wecan__item:first-child { margin-top: 0; }
-.wecan .wecan__item:before { position: absolute; top: 0; left: 0; background: url('../img/icons-s26144dfd54.png') 0 -160px no-repeat; width: 25px; height: 25px; content: ""; }
+.wecan .wecan__item:before { position: absolute; top: 0; left: 0; background: url('../img/icons-s61bf2dda8d.png') 0 -186px no-repeat; width: 25px; height: 25px; content: ""; }
 .wecan .wecan__item.wecan__item_hot { border: 3px solid #ede4db; margin-top: 7px; margin-left: -16px; padding: 18px 11px 14px 47px; background-image: -webkit-linear-gradient(235deg, rgba(115, 195, 234, 0.25) 0%, rgba(230, 0, 126, 0.25) 100%); background-image: -moz-linear-gradient(235deg, rgba(115, 195, 234, 0.25) 0%, rgba(230, 0, 126, 0.25) 100%); background-image: -o-linear-gradient(235deg, rgba(115, 195, 234, 0.25) 0%, rgba(230, 0, 126, 0.25) 100%); background-image: linear-gradient(235deg, rgba(115, 195, 234, 0.25) 0%, rgba(230, 0, 126, 0.25) 100%); }
-.wecan .wecan__item.wecan__item_hot:before { top: 12px; left: 14px; background: url('../img/icons-s26144dfd54.png') 0 -123px no-repeat; width: 22px; height: 27px; }
+.wecan .wecan__item.wecan__item_hot:before { top: 12px; left: 14px; background: url('../img/icons-s61bf2dda8d.png') 0 -123px no-repeat; width: 22px; height: 27px; }
 
 .team { margin-left: 585px; padding-top: 128px; }
 .team li { margin-top: 30px; padding-left: 58px; }
@@ -135,3 +134,51 @@ body { font-family: "museocyrl-300"; font-weight: normal; font-style: normal; fo
 .project .project__head:after { content: " "; display: table; clear: both; }
 .project .project__head .btn { float: right; width: 380px; margin-top: -4px; }
 .project .project__pic { text-align: right; }
+
+.contact { background: url("../img/bg4.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; color: white; font-size: 36px; }
+.contact a { color: inherit; text-decoration: underline; }
+.contact a:hover { text-decoration: none; }
+.contact .container { padding: 50px 0 43px; }
+.contact .contact__table { width: 100%; table-layout: fixed; }
+.contact .contact__table td { text-align: left; padding-left: 10px; line-height: 44px; }
+.contact .contact__table td:first-child { padding-right: 10px; padding-left: 0; text-align: right; width: 360px; }
+
+.map .google-map { height: 828px; width: 100%; }
+.map .google-map__window { text-align: center; font-family: "museocyrl-300"; font-weight: normal; font-style: normal; }
+.map .google-map__window h2 { font-family: "museocyrl-900"; font-weight: normal; font-style: normal; }
+
+.footer { height: 34px; background: url(../img/bg5.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+
+.works { background: #eff2f3 url("../img/bg6.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.works .container { padding: 60px 0 35px; }
+.works .works__action { margin-top: 25px; }
+.works .works__action .btn { display: block; width: 460px; text-align: center; margin: 0 auto; }
+.works .works__top { margin-bottom: 10px; }
+.works .works__top .h4 { display: inline-block; vertical-align: middle; }
+.works .works__top .slider__pager { display: inline-block; vertical-align: middle; margin-left: 18px; position: relative; top: -3px; }
+
+.slider__pager span { background: url('../img/icons-s61bf2dda8d.png') 0 -221px no-repeat; width: 16px; height: 16px; display: inline-block; vertical-align: middle; font: 0/0 a; text-shadow: none; color: transparent; margin: 0 5px; cursor: pointer; }
+.slider__pager span.is-active { background: url('../img/icons-s61bf2dda8d.png') 0 -160px no-repeat; width: 16px; height: 16px; }
+
+.slider .slider__pic { text-align: center; margin-bottom: 8px; }
+.slider .slider__next, .slider .slider__prev { position: absolute; top: 126px; font: 0/0 a; text-shadow: none; color: transparent; cursor: pointer; }
+.slider .slider__next { right: 0; background: url('../img/icons-s61bf2dda8d.png') 0 -247px no-repeat; width: 40px; height: 79px; }
+.slider .slider__prev { left: 0; background: url('../img/icons-s61bf2dda8d.png') 0 -336px no-repeat; width: 40px; height: 79px; }
+.slider .slider__descr { font-size: 18px; margin-left: 160px; color: #e6007e; }
+.slider .slider__descr a { color: #007eff; text-decoration: underline; }
+.slider .slider__descr a:hover { text-decoration: none; }
+
+.has-open-popup { overflow: hidden; }
+
+.overlay { display: none; position: fixed; top: 0; right: 0; left: 0; bottom: 0; z-index: 20000; background: black; background: rgba(0, 0, 0, 0.85); text-align: center; overflow: auto; font-size: 0; }
+.overlay:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+
+.popup { position: relative; display: inline-block; vertical-align: middle; margin: 100px 0; width: 640px; }
+.popup .popup__content { background: white; color: #4f555e; font-size: 14px; text-align: left; overflow: hidden; padding: 30px 0 20px; }
+.popup .popup__title { font-size: 18px; margin-bottom: 37px; }
+.popup .popup__holder { width: 390px; margin: 0 auto; }
+.popup .popup__note { font-size: 12px; margin-top: 50px; }
+.popup .popup__row { margin-bottom: 16px; }
+.popup .popup__label { display: block; margin-bottom: 3px; }
+.popup .popup__action { margin-top: 25px; }
+.popup .popup__action .btn { text-transform: uppercase; padding-left: 25px; padding-right: 25px; }

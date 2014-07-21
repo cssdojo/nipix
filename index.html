@@ -14,7 +14,7 @@
 	<div class="header">
 		<div class="container">
 			<div class="header__right">
-				<a href="#" class="header__tel">8 (968) 520-29-99</a>
+				<span class="header__tel">8 (968) 520-29-99</span>
 				<span class="header__sep">или</span>
 				<a href="#" class="header__btn-order btn js-order-btn">Заказать звонок</a>
 				<div class="header__order">
@@ -84,7 +84,7 @@
 			<div class="section__left">
 				<h1 class="h1">Создаём поток потенциальных клиентов для вашего бизнеса</h1>
 				<div class="section__action">
-					<a href="#" class="btn btn_md btn_block">Заказать консультацию</a>
+					<a href="js-popup-order" class="btn btn_md btn_block js-popup-link">Заказать консультацию</a>
 					<div class="section__try">
 						<img src="img/try.png" alt="try">
 					</div>
@@ -101,13 +101,63 @@
 		</div>
 	</div>
 	<!-- END section -->
+	<!-- BEGIN works -->
+	<div class="works">
+		<div class="container">
+			<div class="works__top">
+				<div class="h4">Наши работы</div>
+				<div class="slider__pager"></div>
+			</div>
+			<div class="slider js-slider">
+				<div class="slider__slide">
+					<div class="slider__pic">
+						<img src="img/work1.png" alt="work">
+					</div>
+					<div class="slider__descr">
+						Интернет-магазин: <a href="#">Denteka.ru</a>
+					</div>
+				</div>
+				<div class="slider__slide">
+					<div class="slider__pic">
+						<img src="img/work1.png" alt="work">
+					</div>
+					<div class="slider__descr">
+						Интернет-магазин: <a href="#">Denteka.ru</a>
+					</div>
+				</div>
+				<div class="slider__slide">
+					<div class="slider__pic">
+						<img src="img/work1.png" alt="work">
+					</div>
+					<div class="slider__descr">
+						Интернет-магазин: <a href="#">Denteka.ru</a>
+					</div>
+				</div>
+				<div class="slider__slide">
+					<div class="slider__pic">
+						<img src="img/work1.png" alt="work">
+					</div>
+					<div class="slider__descr">
+						Интернет-магазин: <a href="#">Denteka.ru</a>
+					</div>
+				</div>
+
+				<div class="slider__prev">prev</div>
+				<div class="slider__next">next</div>
+			</div>
+			<div class="works__action">
+				<a href="js-popup-order" class="btn btn_md js-popup-link">Заказать интернет-магазин</a>
+			</div>
+		</div>
+	</div>
+	<!-- END works -->
 	<!-- BEGIN section -->
 	<div class="section section_mod">
 		<div class="container">
 			<div class="section__left">
 				<h1 class="h1">Над вашим проектом будут трудиться:</h1>
 				<div class="section__action">
-					<a href="#" class="btn btn_md btn_block">Заказать консультацию</a>
+					<a href="js-popup-order" class="btn btn_md btn_block js-popup-link">Заказать консультацию</a>
 					<div class="section__try">
 						<img src="img/try.png" alt="try">
 					</div>
@@ -150,7 +200,7 @@
 	<div class="project">
 		<div class="container">
 			<div class="project__head">
-				<a href="#" class="btn btn_block btn_md">Узнать больше</a>
+				<a href="js-popup-order" class="btn btn_block btn_md js-popup-link">Узнать больше</a>
 				<h2 class="h2">Типовой проект:</h2>
 			</div>
 			<div class="project__pic">
@@ -159,8 +209,121 @@
 		</div>
 	</div>
 	<!-- END project -->
+	<!-- BEGIN contact -->
+	<div class="contact">
+		<div class="container">
+			<table class="contact__table">
+				<tr>
+					<td><h2 class="h2">Свяжитесь с нами:</h2></td>
+					<td>
+						<p>8 (968) 520–29–99</p>
+						<p><a href="mailto:max@nipix.ru">max@nipix.ru</a></p>
+						<p>Москва, Ленинский проспект, 30</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- END contact -->
+	<!-- BEGIN map -->
+	<div class="map">
+		<div id="map-canvas" class="google-map"></div>
+		<script>
+				function initialize() {
+					var mapOptions = {
+							zoom: 16,
+							mapTypeControlOptions: {
+							     mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'tehgrayz']
+							},
+							center: new google.maps.LatLng(55.711506, 37.581678),
+							disableDefaultUI: true,
+							scrollwheel: false,
+						zoomControl: true,
+						zoomControlOptions: {
+								style: google.maps.ZoomControlStyle.DEFAULT,
+								position: google.maps.ControlPosition.LEFT_CENTER
+							},
+							mapTypeId: google.maps.MapTypeId.ROADMAP,
+
+					}
+					var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+					var myLatLng1 = new google.maps.LatLng(55.711506, 37.581678);
+
+					var stylez = [
+					    {
+					      featureType: "all",
+					      elementType: "all",
+					      stylers: [
+					        { saturation: -100 } // <-- THIS
+					      ]
+					    }
+					];
+					var marker1 = new google.maps.Marker({
+							position: myLatLng1,
+							map: map,
+							title: 'Uluru (Ayers Rock)', 
+							// icon: image
+				});
+
+				var contentString1 =	'<div class="google-map__window">'
+						+'<h2>NIPIX.RU</h2>'
+						+'<p>8 (968) 520–29–99</p>'
+					'</div>';
+
+				var infowindow1 = new google.maps.InfoWindow({
+						content: contentString1
+				});
+				google.maps.event.addListener(marker1, 'click', function(){
+						infowindow1.open(map,marker1);
+				});
+				var mapType = new google.maps.StyledMapType(stylez, { name:"Grayscale" });    
+				map.mapTypes.set('tehgrayz', mapType);
+				map.setMapTypeId('tehgrayz');
+
+			}
+				// Asynchronous Loading
+			function loadScript() {
+				var script = document.createElement('script');
+				script.type = 'text/javascript';
+				script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+						'callback=initialize';
+				document.body.appendChild(script);
+			}
+			window.onload = loadScript;
+		</script>
+		<!-- /.google-map -->
+	</div>
+	<!-- END map -->
+	<!-- BEGIN footer -->
+	<div class="footer"></div>
+	<!-- END footer -->
 </div>
 <!-- end out -->
+
+<div class="overlay js-overlay">
+	<div class="popup js-popup js-popup-order">
+<!-- 		<div class="popup__close js-popup-close"></div> -->
+		<div class="popup__content">
+			<div class="popup__holder">
+				<h2 class="popup__title">Отправьте свои контактные данные и мы свяжемся с вами в ближайшее время.</h2>
+				<div class="popup__form">
+					<div class="popup__row">
+						<label for="" class="popup__label">Ваш номер</label>
+						<input type="text" class="input" placeholder="+7(123)123-45-67">
+					</div>
+					<div class="popup__row">
+						<label for="" class="popup__label">Электронная почта</label>
+						<input type="text" class="input" placeholder="name@example.ru">
+					</div>
+					<div class="popup__action">
+						<button class="btn btn_action">Отправить</button>
+					</div>
+				</div>
+				<div class="popup__note">Спамить не будем, данные третьим лицам не отдадим.</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

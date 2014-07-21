@@ -177,9 +177,9 @@ body
 		margin-top: 9px
 	.header__tel
 		color: #1cb4e4
-		text-decoration: none
-		&:hover
-			text-decoration: underline
+		// text-decoration: none
+		// &:hover
+		// 	text-decoration: underline
 	.header__sep
 		display: inline-block
 		margin: 0 5px
@@ -386,4 +386,173 @@ body
 	.project__pic
 		text-align: right
 
+.contact
+	background: url('../img/bg4.jpg')
+	+cover
+	color: #fff
+	font-size: 36px
+	a
+		color: inherit
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	.container
+		padding: 50px 0 43px
+	.contact__table
+		width: 100%
+		table-layout: fixed
+		td
+			text-align: left
+			padding-left: 10px
+			line-height: 44px
+			&:first-child
+				padding-right: 10px
+				padding-left: 0
+				text-align: right
+				width: 360px
+
+.map
+	// height: 828px
+	.google-map
+		height: 828px
+		width: 100%
+	.google-map__window
+		text-align: center
+		+m300
+		h2
+			+m900
+// .gm-style .place-card .address
+// 	display: none
+
+.footer
+	height: 34px
+	background: url(../img/bg5.jpg)
+	+cover
+
+.works
+	background: #eff2f3 url('../img/bg6.jpg')
+	+cover
+	.container
+		padding: 60px 0 35px
+	.works__action
+		// text-align: center
+		margin-top: 25px
+		.btn
+			display: block
+			width: 460px
+			text-align: center
+			margin: 0 auto
+	.works__top
+		margin-bottom: 10px
+		.h4
+			display: inline-block
+			vertical-align: middle
+		.slider__pager
+			display: inline-block
+			vertical-align: middle
+			margin-left: 18px
+			position: relative
+			top: -3px
+
+.slider__pager
+	span
+		+s(pager)
+		display: inline-block
+		vertical-align: middle
+		+hidetext
+		margin: 0 5px
+		cursor: pointer
+		&.is-active
+			+s(pager_a)
+.slider
+	// margin-bottom: 30px
+	.slider__pic
+		text-align: center
+		margin-bottom: 8px
+	.slider__next,
+	.slider__prev
+		position: absolute
+		top: 126px
+		+hidetext
+		cursor: pointer
+	.slider__next
+		right: 0
+		+s(next)
+	.slider__prev
+		left: 0
+		+s(prev)
+	.slider__descr
+		font-size: 18px
+		margin-left: 160px
+		color: #e6007e
+		a
+			color: #007eff
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+
+
+.has-open-popup
+	overflow: hidden
+.overlay
+	display: none
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	z-index: 20000
+	background: #000
+	background: rgba(#000, 0.85)
+	text-align: center
+	overflow: auto
+	font-size: 0
+	&:before
+		content: ""
+		display: inline-block
+		vertical-align: middle
+		width: 0
+		height: 100%
+.popup
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	margin: 100px 0
+	width: 640px
+	// .popup__close
+	// 	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAQAAACROWYpAAACDUlEQVRIx5WVzS4EQRDHRzCSPc3RxcFFnPAE1tVXJBz4P4GTryfYdVxOlngLL8DFwUeyPg48gQs7CCKRWCyqe6p7aqZ7V6QO21X1/2W6q7prAwSOdWMKWzhBHe9kdVptUaTbVeYDEcq4x4/HHigTtYMX6DsSeCL7Fn6dFF64E7tWdIY1DKNHx3totYZzm9slZQ7uxB4nrzHhqUOAScokij2Dm9Q2JzbQ5UWVdaHCqh0Jz3NwuSVobJmV8waOEOvAJgs60OtABVvpTa2Nla/csnYvecMd1NVbDObQAypZxNW51PqygkPua9GiypO4QlXM4EXt3SMM6O6oZY2FA3jjUxncoMoWWVXT3lSAql6s2u+MZXCJlq1mVfvbAY70YkScUOKHFi0JxYiOHAf6xE06uSxQ0eI+VNWpqU4doEE/L05rsnjJyb9QtNEKLtBDNOhrrnHKnhPYt+0C9jObvsvhIb6SbR87BZPopxcfNgXLt0qiJXF2idtWZS9JFs2WLsWTSzKt9v8ormcfbpwKG7yBGe2PptczfRjJE+/XeMlpXANz/DAu0oeRPskNlvZjxdP3WV5V+LtRfhgs/TkMlli5IMfQDgcr/x9DcgBeYdyLjlOmxQDMjt6aHr0h36Yh8mrtRq8Z+rG4lE099JsiErca+ubvZp37nrdHykTt/6vMH10Vp/SdD7KYVlWKhK7yF7QPpH4b5JCLAAAAAElFTkSuQmCC")
+	// 	width: 30px
+	// 	height: 30px
+	// 	cursor: pointer
+	// 	position: absolute
+	// 	top: 0
+	// 	right: -45px
+	.popup__content
+		background: #fff
+		color: #4f555e
+		font-size: 14px
+		text-align: left
+		overflow: hidden
+		padding: 30px 0 20px
+	.popup__title
+		font-size: 18px
+		margin-bottom: 37px
+	.popup__holder
+		width: 390px
+		margin: 0 auto
+	.popup__note
+		font-size: 12px
+		margin-top: 50px
+	.popup__form
+	.popup__row
+		margin-bottom: 16px
+	.popup__label
+		display: block
+		margin-bottom: 3px
+	.popup__action
+		margin-top: 25px
+		.btn
+			text-transform: uppercase
+			padding-left: 25px
+			padding-right: 25px
 
