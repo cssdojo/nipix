@@ -70,7 +70,7 @@ body { font-family: "museocyrl-300"; font-weight: normal; font-style: normal; fo
 .header .header__tel { color: #1cb4e4; }
 .header .header__sep { display: inline-block; margin: 0 5px; }
 .header .header__btn-order { display: inline-block; margin-top: -1px; }
-.header .order { position: absolute; top: 0; right: 0; }
+.header .order { position: absolute; top: 0; right: 0; display: none; }
 
 .order { background: white; width: 345px; border: 1px solid #e3e5e5; padding: 25px 20px 15px; color: #4f555e; }
 .order .order__label { line-height: 1; margin-bottom: 4px; }
